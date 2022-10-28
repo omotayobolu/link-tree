@@ -9,7 +9,7 @@ const Links = () => {
     <main className="mt-6">
       {LinkData.map((link) => {
         return (
-          <div className="flex flex-col my-4">
+          <div className="flex flex-col my-4" key={link.id}>
             <button
               id={link.id}
               className="py-4 font-medium text-[18px] rounded-lg bg-grey disabled:bg-disabledGrey hover:bg-hoverGrey active:bg-activeGrey"
@@ -21,7 +21,7 @@ const Links = () => {
           </div>
         );
       })}
-      <div className="flex justify-center items-center gap-4 mt-8">
+      <div className="sm:flex justify-center items-center gap-4 mt-8 hidden ">
         <img src={Slack} alt="" />
         <img src={Github} alt="" />
       </div>

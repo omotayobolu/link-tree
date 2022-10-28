@@ -1,13 +1,17 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Footer from "./components/Footer";
 import Links from "./components/Links";
 import Profile from "./components/Profile";
 
 const App = () => {
   return (
-    <div className="p-[2%] sm:px-[10%] sm:py-[3%]">
-      <Profile />
-      <Links />
-    </div>
+    <Fragment>
+      <div className="p-[3%] sm:px-[10%] sm:py-[3%]">
+        <Profile />
+        <Links />
+      </div>
+      <Footer />
+    </Fragment>
   );
 };
 
