@@ -6,7 +6,7 @@ import Profile from "./components/Profile";
 const App = () => {
   return (
     <Fragment>
-      <div className="p-[3%] sm:px-[10%] sm:py-[3%]">
+      <div className="px-[3%] py-[7%] sm:px-[10%] sm:py-[3%]">
         <Profile />
         <Links />
       </div>

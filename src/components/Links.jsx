@@ -14,14 +14,18 @@ const Links = () => {
               id={link.id}
               className="py-4 font-medium text-[18px] rounded-lg bg-grey disabled:bg-disabledGrey hover:bg-hoverGrey active:bg-activeGrey"
             >
-              <a href={link.link} className="text-black leading-7">
+              <a
+                href={link.link}
+                title={link.title}
+                className="text-black leading-7"
+              >
                 {link.name}
               </a>
             </button>
           </div>
         );
       })}
-      <div className="sm:flex justify-center items-center gap-4 mt-8 hidden ">
+      <div className="flex justify-center items-center gap-4 mt-8">
         <img src={Slack} alt="" />
         <img src={Github} alt="" />
       </div>
