@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+
+import ZuriLogo from "../assets/zuri logo.png";
 
 const Contact = () => {
   return (
@@ -22,7 +24,7 @@ const Contact = () => {
                 type="text"
                 id="first_name"
                 placeholder="Enter your first name"
-                className="border border-hoverGrey p-2 rounded-lg"
+                className="border border-hoverGrey p-2 rounded-lg focus:border-inputFocus"
               />
             </div>
             <div className="w-100 flex flex-col w-full">
@@ -67,7 +69,7 @@ const Contact = () => {
               placeholder="Send me a message and I'll reply you as soon as possible.."
             ></textarea>
           </div>
-          <div className="flex flex-row my-6 gap-2">
+          <div className="flex flex-row items-center my-6 gap-2">
             <input type="checkbox" />
             <label
               htmlFor=""
@@ -77,11 +79,22 @@ const Contact = () => {
               you.
             </label>
           </div>
-          <button className="w-full bg-button text-white rounded-lg py-3">
+          <button
+            id="btn__submit"
+            className="w-full bg-button hover:bg-buttonHover active:bg-buttonActive
+            disabled:bg-disabledButton text-white rounded-lg py-3"
+          >
             Send Message
           </button>
         </form>
       </div>
+      <footer className="mt-12">
+        <hr />
+        <div className="py-4 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between md:w-[60%]">
+          <img src={ZuriLogo} alt="" />
+          <p className="text-darkGrey">HNG Internship 9 Frontend Task</p>
+        </div>
+      </footer>
     </section>
   );
 };
