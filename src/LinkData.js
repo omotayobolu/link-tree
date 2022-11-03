@@ -29,4 +29,11 @@ export const LinkData = [
     link: "https://books.zuri.team/design-rules",
     title: "We offer free design books",
   },
+
+  {
+    id: "contact",
+    name: "Contact Me",
+    link: "/contact",
+    title: "My contact information",
+  },
 ];
