@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import Contact from "./components/Contact";
@@ -13,7 +12,6 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
-      <Footer />
     </Fragment>
   );
 };

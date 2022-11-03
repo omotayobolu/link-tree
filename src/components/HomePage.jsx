@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 import Links from "./Links";
 import Profile from "./Profile";
 
@@ -7,6 +8,7 @@ const HomePage = () => {
     <>
       <Profile />
       <Links />
+      <Footer />
     </>
   );
 };
