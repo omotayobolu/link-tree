@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { LinkData } from "../LinkData";
 import Slack from "../assets/slack.png";
@@ -14,13 +15,13 @@ const Links = () => {
               id={link.id}
               className="py-4 font-medium text-[18px] rounded-lg bg-grey disabled:bg-disabledGrey hover:bg-hoverGrey active:bg-activeGrey"
             >
-              <a
-                href={link.link}
+              <Link
+                to={link.link}
                 title={link.title}
                 className="text-black leading-7"
               >
                 {link.name}
-              </a>
+              </Link>
             </button>
           </div>
         );
