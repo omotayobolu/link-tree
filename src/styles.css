@@ -18,12 +18,21 @@
     min-height: 100vh;
   }
 
-  input {
-    @apply text-black focus:border-inputFocus focus:drop-shadow-borderShadow;
+  input[type="text"],
+  input[type="email"] {
+    @apply text-black focus:border-inputFocus focus:drop-shadow-borderShadow border default:border-hoverGrey p-2 rounded-lg;
   }
 
   input[type="checkbox"] {
     -webkit-appearance: none;
-    @apply border border-hoverGrey h-4 w-4 rounded-md focus:border-inputFocus checked:bg-tick bg-no-repeat bg-center;
+    @apply border-2 border-hoverGrey h-4 w-4 rounded-md hover:border-inputFocus checked:bg-tick checked:border-button bg-no-repeat bg-center bg-contain;
+  }
+
+  span {
+    @apply absolute bottom-0 text-red text-[14px];
+  }
+
+  textarea {
+    @apply border default:border-hoverGrey p-2 rounded-lg w-full h-[130px] resize-none overflow-auto focus:border-2 focus:border-inputFocus focus:drop-shadow-textAreaShadow;
   }
 }
