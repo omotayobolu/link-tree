@@ -141,12 +141,9 @@ const Contact = () => {
             ></textarea>
             {messageInvalid && <span>Please enter a message</span>}
           </div>
-          <div className="flex flex-row items-center my-3 gap-2">
+          <div className="flex flex-row items-center my-3 gap-3">
             <input type="checkbox" />
-            <label
-              htmlFor=""
-              className="text-[16px] text-contactText leading-6"
-            >
+            <label className="text-[16px] text-contactText leading-6">
               You agree to providing your data to {name} who may contact you.
             </label>
           </div>
