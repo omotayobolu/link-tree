@@ -112,7 +112,7 @@ const Contact = () => {
             </label>
             <input
               type="email"
-              id="emal"
+              id="email"
               placeholder="yourname@email.com"
               className={`${emailInvalid && "border-red"}`}
               value={email}
